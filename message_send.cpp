@@ -11,7 +11,7 @@
 
 
 // iskra_message_write
-//Procedure that forms a zero-terminated 24-byte message buffer in accordance with Iskra protocol.
+// Procedure that forms a zero-terminated 24-byte message buffer in accordance with Iskra protocol.
 
 int iskra_message_write(char TRK_NO, char Command, uint32_t Price, uint32_t Volume, uint16_t Status, char buf[24] ) {
     
@@ -27,7 +27,7 @@ int iskra_message_write(char TRK_NO, char Command, uint32_t Price, uint32_t Volu
     buf[1]='0'+TRK_NO/16; //TRK_NO HIGH BYTE
     
     unsigned char tmp2=TRK_NO%16; // TRK_NO LOW BYTE
-    buf[2]=tmp2>0x9?'A'+tmp2-0xA:'0'+tmp2;	// TRK_NO LOW BYTE
+    buf[2]=tmp2>0x9?'A'+tmp2-0xA:'0'+tmp2; // TRK_NO LOW BYTE
     
     buf[3]=Command>0x9?'A'+Command-0xA:'0'+Command; //Command
     
