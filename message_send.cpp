@@ -3,8 +3,6 @@
 #define ERROR_SUCCESS 0
 #define INVALID_TRK_NO 1
 #define INVALID_COMMAND 2
-#define INVALID_TRK_NO 1
-#define INVALID_COMMAND 2
 #define INVALID_PRICE 3
 #define INVALID_VOLUME 4
 
